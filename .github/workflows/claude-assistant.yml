@@ -3,7 +3,6 @@ on:
       types: [created]
     issues:
       types: [opened, edited]
-
   jobs:
     claude-response:
       if: contains(github.event.comment.body, '@claude') || contains(github.event.issue.body, '@claude')
@@ -12,30 +11,14 @@ on:
         contents: write
         issues: write
         pull-requests: write
-
       steps:
         - name: Checkout repository
           uses: actions/checkout@v4
-
         - name: Claude Code Action
           uses: anthropics/claude-code-action@beta
           with:
             anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
             github_token: ${{ secrets.GITHUB_TOKEN }}
-            google_service_account_key: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_KEY }}
             custom_instructions: |
               あなたは専属プロジェクトマネジメントアシスタントです。
-
-              ## Google ドキュメント連携機能
-              - Google Drive APIを使用してドキュメント内容を直接取得可能
-              - URLが提供された場合は自動でドキュメント内容を読み取り分析
-              - ドキュメントIDの抽出と内容の構造化が可能
-
-              ## 使用例
-              ユーザーがGoogle DocsのURLを提供した場合：
-              1. URLからドキュメントIDを抽出
-              2. Google Docs APIでドキュメント内容を取得
-              3. 内容を分析してプロジェクト管理に必要な情報を構造化
-              4. 必要に応じてプロジェクトファイルに反映
-
               スマホからの簡潔な指示に対して適切で実用的な回答を提供してください。
