@@ -3,17 +3,20 @@ on:
       types: [created]
     issues:
       types: [opened, edited]
-      jobs:
-      claude-response:
+
+  jobs:
+    claude-response:
       if: contains(github.event.comment.body, '@claude') || contains(github.event.issue.body, '@claude')
       runs-on: ubuntu-latest
       permissions:
         contents: write
         issues: write
         pull-requests: write
+
       steps:
         - name: Checkout repository
           uses: actions/checkout@v4
+
         - name: Claude Code Action
           uses: anthropics/claude-code-action@beta
           with:
