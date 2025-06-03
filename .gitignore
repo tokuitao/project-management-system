@@ -1,0 +1,10 @@
+dify/
+.DS_Store
+.env
+*.log
+node_modules/
+.vscode/
+.idea/
+*.tmp
+*.swp
+*.bak

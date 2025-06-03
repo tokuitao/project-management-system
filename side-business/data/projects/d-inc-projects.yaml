@@ -1,0 +1,74 @@
+# D inc. プロジェクト管理
+
+company_info:
+  name: "D株式会社"
+  parent_company: "ジョブプロジェクト株式会社（JP）100%子会社"
+  business_model: "Web3・メタバース・AI人材のサブスクサービス"
+  contract_type: "業務委託のみ"
+  work_style: "フルリモート"
+  main_office: "高田馬場"
+
+organization:
+  roles:
+    - name: "【メインクラス】ハンター"
+      description: "クエスト遂行、準委任で週1〜フルタイム稼働"
+    - name: "【サブクラス】探索NPC"
+      description: "クエスト探索（営業）担当"
+    - name: "【サブクラス】ギルド協会NPC"
+      description: "全体サポート・バックオフィス"
+
+revenue_structure:
+  project_budget: "基本60%（アサインハンター還元）"
+  referral_incentive: "固定5%（リファラル還元）"
+  company_share: "基本35%（福利厚生・運営費等）"
+
+projects:
+  - name: "富士フイルム最新テクノロジー調査・事業企画支援"
+    client: "富士フイルム株式会社 イメージングソリューション事業部"
+    contract_via: "GCT Japan（再委託）"
+    status: "進行中"
+    priority: "高"
+    contract_period: "2025年6月1日〜（1ヶ月更新制）"
+    target_period: "2025年8月31日まで（約3ヶ月）"
+    monthly_hours: "30時間程度"
+    description: |
+      NFT、メタバース、XR、AIの調査および事業企画検討支援。
+      富士フイルムの保有リソースと最新テクノロジーを組み合わせたビジネス展開検討。
+      完全ゼロベースからの検討案件。
+    
+    focus_areas:
+      - "NFT関連プロジェクト調査・活用提案書作成"
+      - "メタバース活用推進（成功例・失敗例調査、取り組み方針提案）"
+      - "XR調査全般（調査範囲絞り込み、フォーカス領域特定、戦略提案）"
+    
+    team_structure:
+      project_manager: "後藤拡行（GCT Japan取締役）"
+      main_responsible: "徳井（D inc.）"
+      support: "福永北斗（GCT Japan）"
+      backup: "D inc.全体"
+    
+    milestones:
+      - content: "初回キックオフミーティング"
+        status: "完了"
+        date: "2025-06-06"
+        note: "12:00〜 富士フイルムオフィス対面"
+      - content: "1ヶ月目末：方向性確定レベル提案"
+        status: "進行中"
+        due_date: "2025-06-30"
+      - content: "3ヶ月完了・継続案件化検討"
+        status: "未着手"
+        due_date: "2025-08-31"
+    
+    meeting_schedule:
+      frequency: "週1回"
+      duration: "最大2時間"
+      format: "対面（富士フイルムオフィス）"
+    
+    key_objectives:
+      - "短期間での成果創出（1ヶ月で方向性確定）"
+      - "次期予算獲得・継続案件化"
+      - "NDA締結後の長期協業関係構築"
+    
+    budget_potential:
+      note: "富士フイルムは予算潤沢、GCT前期約1億円取引実績"
+      expansion_possibility: "成果次第で予算増加・継続案件化"
