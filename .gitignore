@@ -1,0 +1,27 @@
+# Docker volumes
+dify/docker/volumes/
+
+# System files
+.DS_Store
+*.log
+*.pid
+
+# Environment files
+.env
+.env.local
+*.local.*
+
+# IDE
+.idea/
+.vscode/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+.Spotlight-V100
+.Trashes
