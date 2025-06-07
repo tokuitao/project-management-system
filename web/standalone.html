@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Graph Viewer (Standalone)</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: #1e1e1e;
+            color: #d4d4d4;
+        }
+        
+        #cy {
+            width: 100vw;
+            height: 100vh;
+            background: #1e1e1e;
+        }
+        
+        #controls {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(30, 30, 30, 0.9);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        
+        #info {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(30, 30, 30, 0.9);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            max-width: 300px;
+        }
+        
+        button {
+            background: #0e639c;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            margin: 5px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background: #1177bb;
+        }
+    </style>
+</head>
+<body>
+    <div id="cy"></div>
+    
+    <div id="controls">
+        <h3>Knowledge Graph Viewer</h3>
+        <p>ノードをクリックして詳細を表示</p>
+        <button onclick="resetView()">ビューをリセット</button>
+        <button onclick="fitView()">全体表示</button>
+    </div>
+    
+    <div id="info">
+        <h3>選択中のノード</h3>
+        <div id="node-info">ノードをクリックしてください</div>
+    </div>
+    
+    <script src="https://unpkg.com/cytoscape@3.26.0/dist/cytoscape.min.js"></script>
+    <script>
+        // グラフデータを直接埋め込み
+        const graphData = {
+            "nodes": [
+                {"id": "topics/Knowledge-Graph.md", "label": "ナレッジグラフ", "type": "document"},
+                {"id": "topics/AI-Project-Management.md", "label": "AI駆動プロジェクト管理", "type": "document"},
+                {"id": "daily/2025-01-07.md", "label": "2025年1月7日 - ナレッジグラフ実装", "type": "document"},
+                {"id": "#ナレッジグラフ", "label": "#ナレッジグラフ", "type": "tag"},
+                {"id": "#AI", "label": "#AI", "type": "tag"},
+                {"id": "#プロジェクト管理", "label": "#プロジェクト管理", "type": "tag"},
+                {"id": "#可視化", "label": "#可視化", "type": "tag"},
+                {"id": "#実装記録", "label": "#実装記録", "type": "tag"}
+            ],
+            "edges": [
+                {"source": "topics/Knowledge-Graph.md", "target": "AI駆動プロジェクト管理", "type": "wiki-link"},
+                {"source": "topics/Knowledge-Graph.md", "target": "ナレッジマネジメント", "type": "wiki-link"},
+                {"source": "topics/AI-Project-Management.md", "target": "ナレッジグラフ", "type": "wiki-link"},
+                {"source": "topics/AI-Project-Management.md", "target": "Slack統合", "type": "wiki-link"},
+                {"source": "daily/2025-01-07.md", "target": "ナレッジグラフ", "type": "wiki-link"},
+                {"source": "daily/2025-01-07.md", "target": "AI駆動プロジェクト管理", "type": "wiki-link"},
+                {"source": "topics/Knowledge-Graph.md", "target": "#ナレッジグラフ", "type": "has-tag"},
+                {"source": "topics/Knowledge-Graph.md", "target": "#可視化", "type": "has-tag"},
+                {"source": "topics/AI-Project-Management.md", "target": "#AI", "type": "has-tag"},
+                {"source": "topics/AI-Project-Management.md", "target": "#プロジェクト管理", "type": "has-tag"},
+                {"source": "daily/2025-01-07.md", "target": "#実装記録", "type": "has-tag"},
+                {"source": "daily/2025-01-07.md", "target": "#ナレッジグラフ", "type": "has-tag"}
+            ]
+        };
+
+        let cy;
+
+        function initializeCytoscape() {
+            const elements = [];
+            
+            graphData.nodes.forEach(node => {
+                elements.push({
+                    data: { 
+                        id: node.id, 
+                        label: node.label,
+                        type: node.type
+                    }
+                });
+            });
+            
+            graphData.edges.forEach(edge => {
+                elements.push({
+                    data: { 
+                        source: edge.source, 
+                        target: edge.target,
+                        type: edge.type
+                    }
+                });
+            });
+            
+            cy = cytoscape({
+                container: document.getElementById('cy'),
+                elements: elements,
+                style: [
+                    {
+                        selector: 'node[type="document"]',
+                        style: {
+                            'background-color': '#0e639c',
+                            'label': 'data(label)',
+                            'text-valign': 'center',
+                            'text-halign': 'center',
+                            'color': '#ffffff',
+                            'text-outline-width': 2,
+                            'text-outline-color': '#1e1e1e',
+                            'font-size': '12px',
+                            'width': 40,
+                            'height': 40
+                        }
+                    },
+                    {
+                        selector: 'node[type="tag"]',
+                        style: {
+                            'background-color': '#608b4e',
+                            'label': 'data(label)',
+                            'text-valign': 'center',
+                            'text-halign': 'center',
+                            'color': '#ffffff',
+                            'text-outline-width': 2,
+                            'text-outline-color': '#1e1e1e',
+                            'font-size': '10px',
+                            'shape': 'roundrectangle',
+                            'width': 'label',
+                            'height': 30,
+                            'padding': 10
+                        }
+                    },
+                    {
+                        selector: 'edge[type="wiki-link"]',
+                        style: {
+                            'width': 2,
+                            'line-color': '#007acc',
+                            'target-arrow-color': '#007acc',
+                            'target-arrow-shape': 'triangle',
+                            'curve-style': 'bezier'
+                        }
+                    },
+                    {
+                        selector: 'edge[type="has-tag"]',
+                        style: {
+                            'width': 1,
+                            'line-color': '#608b4e',
+                            'line-style': 'dashed',
+                            'curve-style': 'bezier'
+                        }
+                    },
+                    {
+                        selector: ':selected',
+                        style: {
+                            'background-color': '#ff8c00',
+                            'line-color': '#ff8c00',
+                            'target-arrow-color': '#ff8c00'
+                        }
+                    }
+                ],
+                layout: {
+                    name: 'cose',
+                    animate: true,
+                    animationDuration: 1000,
+                    nodeRepulsion: 400000,
+                    idealEdgeLength: 100,
+                    edgeElasticity: 100,
+                    nestingFactor: 5,
+                    gravity: 80,
+                    numIter: 1000,
+                    initialTemp: 200,
+                    coolingFactor: 0.95,
+                    minTemp: 1.0
+                }
+            });
+            
+            cy.on('tap', 'node', function(evt){
+                const node = evt.target;
+                showNodeInfo(node);
+            });
+        }
+
+        function showNodeInfo(node) {
+            const data = node.data();
+            let info = `<h4>${data.label}</h4>`;
+            info += `<p>タイプ: ${data.type === 'document' ? 'ドキュメント' : 'タグ'}</p>`;
+            
+            const connectedEdges = node.connectedEdges();
+            const connectedNodes = connectedEdges.connectedNodes().filter(n => n.id() !== node.id());
+            
+            if (connectedNodes.length > 0) {
+                info += '<p>接続:</p><ul>';
+                connectedNodes.forEach(n => {
+                    info += `<li>${n.data('label')}</li>`;
+                });
+                info += '</ul>';
+            }
+            
+            document.getElementById('node-info').innerHTML = info;
+        }
+
+        function resetView() {
+            cy.reset();
+        }
+
+        function fitView() {
+            cy.fit();
+        }
+
+        document.addEventListener('DOMContentLoaded', initializeCytoscape);
+    </script>
+</body>
+</html>

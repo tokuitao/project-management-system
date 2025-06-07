@@ -1,0 +1,240 @@
+{
+  "nodes": [
+    {
+      "id": "topics/Knowledge-Graph.md",
+      "label": "ナレッジグラフ",
+      "type": "document",
+      "tags": [
+        "#タグ`による分類",
+        "#ナレッジグラフ",
+        "#可視化",
+        "#Obsidian",
+        "#ドキュメント管理"
+      ]
+    },
+    {
+      "id": "topics/AI-Project-Management.md",
+      "label": "AI駆動プロジェクト管理",
+      "type": "document",
+      "tags": [
+        "#AI",
+        "#プロジェクト管理",
+        "#自動化",
+        "#Claude",
+        "#Gemini"
+      ]
+    },
+    {
+      "id": "daily/2025-01-07.md",
+      "label": "2025年1月7日 - ナレッジグラフ実装",
+      "type": "document",
+      "tags": [
+        "#実装記録",
+        "#ナレッジグラフ",
+        "#進捗"
+      ]
+    },
+    {
+      "id": "#タグ`による分類",
+      "label": "#タグ`による分類",
+      "type": "tag"
+    },
+    {
+      "id": "#ナレッジグラフ",
+      "label": "#ナレッジグラフ",
+      "type": "tag"
+    },
+    {
+      "id": "#可視化",
+      "label": "#可視化",
+      "type": "tag"
+    },
+    {
+      "id": "#Obsidian",
+      "label": "#Obsidian",
+      "type": "tag"
+    },
+    {
+      "id": "#ドキュメント管理",
+      "label": "#ドキュメント管理",
+      "type": "tag"
+    },
+    {
+      "id": "#AI",
+      "label": "#AI",
+      "type": "tag"
+    },
+    {
+      "id": "#プロジェクト管理",
+      "label": "#プロジェクト管理",
+      "type": "tag"
+    },
+    {
+      "id": "#自動化",
+      "label": "#自動化",
+      "type": "tag"
+    },
+    {
+      "id": "#Claude",
+      "label": "#Claude",
+      "type": "tag"
+    },
+    {
+      "id": "#Gemini",
+      "label": "#Gemini",
+      "type": "tag"
+    },
+    {
+      "id": "#実装記録",
+      "label": "#実装記録",
+      "type": "tag"
+    },
+    {
+      "id": "#進捗",
+      "label": "#進捗",
+      "type": "tag"
+    }
+  ],
+  "edges": [
+    {
+      "source": "topics/Knowledge-Graph.md",
+      "target": "ページ名",
+      "type": "wiki-link"
+    },
+    {
+      "source": "topics/Knowledge-Graph.md",
+      "target": "AI駆動プロジェクト管理",
+      "type": "wiki-link"
+    },
+    {
+      "source": "topics/Knowledge-Graph.md",
+      "target": "Markdown解析",
+      "type": "wiki-link"
+    },
+    {
+      "source": "topics/Knowledge-Graph.md",
+      "target": "ナレッジマネジメント",
+      "type": "wiki-link"
+    },
+    {
+      "source": "topics/AI-Project-Management.md",
+      "target": "ナレッジグラフ",
+      "type": "wiki-link"
+    },
+    {
+      "source": "topics/AI-Project-Management.md",
+      "target": "Slack統合",
+      "type": "wiki-link"
+    },
+    {
+      "source": "topics/AI-Project-Management.md",
+      "target": "GitHub統合",
+      "type": "wiki-link"
+    },
+    {
+      "source": "topics/AI-Project-Management.md",
+      "target": "ナレッジマネジメント",
+      "type": "wiki-link"
+    },
+    {
+      "source": "topics/AI-Project-Management.md",
+      "target": "タスク自動化",
+      "type": "wiki-link"
+    },
+    {
+      "source": "topics/AI-Project-Management.md",
+      "target": "Web3プロジェクト",
+      "type": "wiki-link"
+    },
+    {
+      "source": "daily/2025-01-07.md",
+      "target": "ナレッジグラフ",
+      "type": "wiki-link"
+    },
+    {
+      "source": "daily/2025-01-07.md",
+      "target": "AI駆動プロジェクト管理",
+      "type": "wiki-link"
+    },
+    {
+      "source": "daily/2025-01-07.md",
+      "target": "GitHub統合",
+      "type": "wiki-link"
+    },
+    {
+      "source": "daily/2025-01-07.md",
+      "target": "プロジェクト管理システム",
+      "type": "wiki-link"
+    },
+    {
+      "source": "daily/2025-01-07.md",
+      "target": "Slack統合",
+      "type": "wiki-link"
+    },
+    {
+      "source": "topics/Knowledge-Graph.md",
+      "target": "#タグ`による分類",
+      "type": "has-tag"
+    },
+    {
+      "source": "topics/Knowledge-Graph.md",
+      "target": "#ナレッジグラフ",
+      "type": "has-tag"
+    },
+    {
+      "source": "daily/2025-01-07.md",
+      "target": "#ナレッジグラフ",
+      "type": "has-tag"
+    },
+    {
+      "source": "topics/Knowledge-Graph.md",
+      "target": "#可視化",
+      "type": "has-tag"
+    },
+    {
+      "source": "topics/Knowledge-Graph.md",
+      "target": "#Obsidian",
+      "type": "has-tag"
+    },
+    {
+      "source": "topics/Knowledge-Graph.md",
+      "target": "#ドキュメント管理",
+      "type": "has-tag"
+    },
+    {
+      "source": "topics/AI-Project-Management.md",
+      "target": "#AI",
+      "type": "has-tag"
+    },
+    {
+      "source": "topics/AI-Project-Management.md",
+      "target": "#プロジェクト管理",
+      "type": "has-tag"
+    },
+    {
+      "source": "topics/AI-Project-Management.md",
+      "target": "#自動化",
+      "type": "has-tag"
+    },
+    {
+      "source": "topics/AI-Project-Management.md",
+      "target": "#Claude",
+      "type": "has-tag"
+    },
+    {
+      "source": "topics/AI-Project-Management.md",
+      "target": "#Gemini",
+      "type": "has-tag"
+    },
+    {
+      "source": "daily/2025-01-07.md",
+      "target": "#実装記録",
+      "type": "has-tag"
+    },
+    {
+      "source": "daily/2025-01-07.md",
+      "target": "#進捗",
+      "type": "has-tag"
+    }
+  ]
+}

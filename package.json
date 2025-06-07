@@ -1,0 +1,33 @@
+{
+  "name": "task-manager-knowledge-graph",
+  "version": "1.0.0",
+  "description": "AI-driven project management system with knowledge graph visualization",
+  "main": "index.js",
+  "scripts": {
+    "build-knowledge": "node scripts/build-graph.js",
+    "graph-view": "node scripts/serve-graph.js",
+    "parse-links": "node scripts/parse-links.js",
+    "build-tags": "node scripts/build-tags.js",
+    "generate-mermaid": "node scripts/generate-mermaid.js",
+    "build-all": "npm run build-knowledge && npm run generate-mermaid",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "project-management",
+    "knowledge-graph",
+    "ai",
+    "obsidian-like"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cytoscape": "^3.26.0",
+    "gray-matter": "^4.0.3",
+    "glob": "^10.3.10",
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
