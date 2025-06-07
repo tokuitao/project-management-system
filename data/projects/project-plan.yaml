@@ -1,0 +1,398 @@
+projects:
+  - name: Web3地方創生オープンイノベーションプログラム (OIP)
+    purpose: |
+# TAL: Function
+      中国地方の自治体・大学と連携し、Web3技術を活用した地方創生プログラムを展開することで、地域企業のDX促進と新規事業創出を支援する。N.Avenueの知見を活かし、地域の課題解決とWeb3エコシステム構築に貢献する。
+    background:
+# TAL: Experience, Contextual
+      - 中国経済産業局との連携により、地域の中小企業・自治体向けWeb3活用支援の重要性が高まっている
+      - 岡山大学OI-Start、島根県庁の協力を得て、オンサイト/オンラインセミナーの開催を検討中
+      - 地域企業のWeb3リテラシー向上と地域課題解決の両面からアプローチする必要がある
+    milestones:
+# TAL: Temporal, Structure
+      - phase: 準備期間（5月）
+        tasks:
+          - content: 岡山大学・島根県庁との初期調整完了
+# TAL: Function, Temporal, Stability
+            status: 完了
+          - content: キービジュアルのコンセプト固め、ラフ案作成開始
+# TAL: Function, Temporal, Stability
+            status: 進行中
+          - content: 岡山大学・島根県庁との次回打ち合わせ設定
+            status: 完了
+          - content: 岡山セミナー概要を固めて先方に共有
+            status: 進行中
+          - content: 島根セミナーコンセプトを固めて先方に共有
+            status: 進行中
+          - content: 登壇者のプロフィールを収集しPeatixに反映
+            status: 完了
+          - content: 登壇者（学外・県外含む）への正式打診開始
+            status: 進行中
+          - content: キービジュアルのデザインFIX、素材提供
+            status: 未着手
+          - content: 申込ページ（Peatix等）作成開始
+            status: 未着手
+          - content: 共催/後援機関の正式名称・ロゴデータ入手
+# TAL: Function, Temporal, Stability
+# TAL: Function, Temporal, Stability
+            status: 未着手
+          - content: 告知用素材一式FIX
+# TAL: Function, Temporal, Stability
+            status: 未着手
+          - content: 申込ページ公開準備完了
+            status: 未着手
+# TAL: Function, Temporal, Stability
+          - content: 懇親会場の候補選定
+# TAL: Function, Temporal, Stability
+# TAL: Function, Temporal, Stability
+            status: 未着手
+          - content: 広報開始！（岡山・島根 同時または順次）
+            status: 未着手
+# TAL: Function, Temporal, Stability
+          - content: N.Avenue媒体での告知
+# TAL: Function, Temporal, Stability
+# TAL: Function, Temporal, Stability
+            status: 未着手
+          - content: 連携機関への広報素材提供・掲載依頼
+# TAL: Function, Temporal, Stability
+# TAL: Function, Temporal, Stability
+            status: 未着手
+# TAL: Function, Temporal, Stability
+          - content: 懇親会場の予約手配
+# TAL: Function, Temporal, Stability
+# TAL: Function, Temporal, Stability
+# TAL: Function, Temporal, Stability
+            status: 未着手
+          - content: 新幹線とホテルの予約 (岡山 5/22 イベント用)
+# TAL: Function, Temporal, Stability
+            status: 完了
+            date: 2025-05-15
+      - phase: 集客・最終準備期間（6月）
+        tasks:
+          - content: 広報活動の継続・強化
+# TAL: Function, Temporal, Stability
+            status: 未着手
+          - content: オンラインセミナー（第2回、第3回）の企画詳細詰め
+            status: 未着手
+          - content: セミナー投影資料作成開始
+            status: 未着手
+          - content: 申込状況モニタリング、追加広報の検討
+            status: 未着手
+          - content: 登壇者との最終打ち合わせ
+            status: 未着手
+          - content: セミナー当日の運営体制確認、役割分担
+            status: 未着手
+          - content: 岡山セミナー向け：参加者へのリマインドメール送信
+            status: 未着手
+          - content: セミナー投影資料FIX
+            status: 未着手
+          - content: 配布資料準備
+            status: 未着手
+          - content: 岡山セミナー最終準備完了
+            status: 未着手
+          - content: 島根セミナー向け：参加者へのリマインドメール送信準備
+            status: 未着手
+      - phase: セミナー実施期間（7月）
+        tasks:
+          - content: 7月4日（金）：岡山セミナー開催 ＆ 懇親会
+            status: 未着手
+          - content: 岡山セミナーアンケート実施、結果集計開始
+            status: 未着手
+          - content: 島根セミナー最終準備
+            status: 未着手
+          - content: 岡山セミナーの簡単な事後レポート作成、関係者共有
+            status: 未着手
+          - content: 島根セミナー向け：参加者へのリマインドメール送信
+            status: 未着手
+          - content: オンラインセミナー（第2回）の告知準備
+            status: 未着手
+          - content: 7月18日（金）：島根セミナー開催 ＆ 懇親会
+            status: 未着手
+          - content: 島根セミナーアンケート実施、結果集計開始
+            status: 未着手
+          - content: 島根セミナーの簡単な事後レポート作成、関係者共有
+            status: 未着手
+          - content: オンラインセミナー（第2回、第3回）の開催準備・実施
+            status: 未着手
+          - content: 岡山大学セミナー内容更新
+            status: 完了
+            date: 2025-05-16
+      - phase: 重要なマイルストーン
+        tasks:
+          - content: 5月中旬: 岡山大学・島根県庁との次回打ち合わせでの内容・登壇者方針決定
+            status: 完了
+            備考: 岡山大学へ登壇者候補お声掛け依頼済
+          - content: 5月下旬: 告知素材FIX、申込ページ公開、広報開始
+            status: 未着手
+          - content: 6月下旬: 岡山セミナー最終準備完了
+            status: 未着手
+          - content: 7月上旬: 島根セミナー最終準備完了
+            status: 未着手
+          - content: 経済産業省 中国経済産業局 菊地様からのご返信を待ち、ご挨拶の内諾を得る
+            status: 進行中
+          - content: 岡山大学 河野様からの返信を待ち、打ち合わせ日程を確定させる
+            status: 進行中
+          - content: 島根県庁 望月様との6月3日(火) 17:00からの打ち合わせに向けて、アジェンダ、共有資料（セミナー概要書 島根案・詳細版）を準備する
+            status: 未着手
+          - content: Peatix等での告知準備に着手する
+            status: 未着手
+          - content: 移動・宿泊手配、経費精算関連の準備
+            status: 未着手
+    google_workspace_links:
+# TAL: Contextual
+      # プロジェクトに関連するGoogleワークスペースドキュメントへのリンクをここに記載
+      # 例:
+      # - title: プロジェクト提案書
+      #   url: [GoogleドキュメントのURL]
+      # - title: 全体スケジュール
+      #   url: [GoogleスプレッドシートのURL]
+
+  - name: AW3A & N.Avenue 連携 IVS/WebX共同イベント企画
+    purpose: |
+      AW3A Japanとの共催によるWeb3イベントを通じて、N.Avenueのブランディング向上と大手企業/CVCからのリード獲得を実現する。互恵的な関係構築により、両社の強みを活かした価値提供を行う。
+    background:
+      - N.Avenueの専門性（Web3メディア運営・コミュニティ形成）とAW3Aのネットワークを組み合わせた相乗効果を狙う
+      - 金銭授受のない互恵的な連携として、長期的な協力関係構築を目指す
+      - IVS提案と並行してWebXも検討するダブルトラック戦略を採用
+      - サイドイベント日程についてAW3A様からの正式返答待ち（返信がないため代替案を検討済）
+    proposed_theme:
+      idea_2:
+        title: "Investor Alpha: Where Smart Money Is Flowing in Web3"
+        details:
+          - 機関投資家・CVCの最新Web3投資動向
+          - 日米欧の投資トレンド比較
+          - 業界別・トークンエコノミクス設計のベストプラクティス
+    milestones:
+      - date: 2025-04-24
+        content: IVS最終提案提出
+        responsible: 徳井→加賀様
+        status: 完了
+      - date: 2025-05月下旬
+        content: WebX企画検討会議
+        responsible: 徳井/左古様
+        status: 完了
+      - date: 2025-06月
+        content: IVS結果フィードバック
+        responsible: 加賀様→徳井
+        status: 完了
+      - date: 2025-07月
+        content: 代替プラン検討・決定
+        responsible: 徳井/左古様
+        status: 完了
+      - date: 2025-05-24
+        content: AW3A様へ代替コミュニケーション方法と候補日時を提示し、ミーティング設定を依頼
+        responsible: 徳井
+        status: 完了
+      - content: パネルディスカッションの外部パネリスト候補（具体的な人物名）をリストアップし、AW3A/JETRO様に連絡。その後、打診を開始
+        status: 完了
+        date: 2025-05-29
+      - content: 先方とのパートナーシップ締結
+        status: 未着手
+      - content: 同イベントの告知ステップの詳細化
+        status: 完了
+      - content: 最終版のタイムテーブルを作成し、AW3A/JETRO様に共有
+        status: 未着手
+      - content: 徳井のTelegram IDをAW3A/JETRO様に共有
+        status: 完了
+    google_workspace_links:
+      - title: AW3A連携イベントタイムテーブル
+        url: https://docs.google.com/document/d/1sRzt8ri7GYT9FCgI14jWvazd3hVW5Sb_2z81x8M_W6E/edit?tab=t.4jxnumem79l0
+    roles:
+      NAvenue:
+        - 企画提案・コンテンツ設計
+        - 登壇者手配・モデレーション
+        - Web3業界専門知識の提供
+      AW3A_Japan:
+        - イベント申請・会場確保（IVS/WebX）
+        - 主要登壇者調整
+        - 大手企業/CVC参加者の招聘
+    google_workspace_links:
+      - title: AW3A連携イベントタイムテーブル
+        url: https://docs.google.com/document/d/1sRzt8ri7GYT9FCgI14jWvazd3hVW5Sb_2z81x8M_W6E/edit?tab=t.4jxnumem79l0
+
+  - name: N.Avenue Club 第3期 営業戦略
+    purpose: |
+      N.Avenue Clubの会員数拡大（目標80社）と成約率向上（7.8%〜15%）を実現し、安定的な収益基盤を確立する。Web3に関心を持つ企業や金融機関を中心に、質の高いコミュニティ形成を目指す。
+    background:
+      - 第1期・第2期の実績と課題を踏まえ、営業プロセスと提供価値の最適化が必要
+      - 広告、トライアル施策、紹介など多様なチャネルでのリード獲得・育成が課題
+      - ラウンドテーブルなどトライアル機会を活用した入会促進が効果的と判明
+      - 新規商談設定（リード獲得）に課題あり
+      - ネクストアクション: 各営業担当者の業務工数を明確化し、リード獲得施策へのリソース配分を最適化
+    milestones:
+      - date: 2025-04-24
+        content: ラウンドテーブル開催
+        responsible: 徳井/参加10社
+        status: 完了
+      - date: 2025-04-26
+        content: アサヒ飲料様・三越伊勢丹様商談
+        responsible: 徳井
+        status: 完了
+      - date: 2025-04-30
+        content: 広告施策拡大
+        responsible: 千葉/月間リード30件
+        status: 準備中
+      - date: 2025-05-15
+        content: 次回ラウンドテーブル企画
+        responsible: 徳井/参加15社
+        status: 企画段階
+      - date: 2025-05-16
+        content: 株式会社UPBOND_藤原様 商談
+        status: 完了
+      - date: 2025-05-31
+        content: KPI中間レビュー
+        responsible: 全社/10社入会
+        status: 予定
+      - content: 先日のトライアル参加者への連絡
+        status: 未着手
+      - content: リードのリストの最新化
+        status: 未着手
+    google_workspace_links:
+      # プロジェクトに関連するGoogleワークスペースドキュメントへのリンクをここに記載
+      # 例:
+      # - title: 営業戦略スプレッドシート
+      #   url: [GoogleスプレッドシートのURL]
+
+  - name: Udemy動画「Web3基礎講座」制作
+    purpose: |
+      Web3/ブロックチェーンのビジネス応用を初学者向けにわかりやすく解説する動画講座を制作・販売し、N.Avenueの認知度向上と新規顧客獲得につなげる。
+    background:
+      - Web3初学者のビジネスパーソン向けにエントリーレベルの教育コンテンツが不足
+      - N.Avenue（CoinDesk Japan）の専門性を活かした信頼性の高いコンテンツ提供が可能
+      - Udemy等のプラットフォームを活用した低コストでの販路拡大
+    lecture_structure:
+      - title: Web2からWeb3へ：パラダイムシフトの理解
+        duration: 約3分
+      - title: ブロックチェーン基礎技術の解説
+        duration: 約5分
+      - title: トークンエコノミーの仕組み
+        duration: 約5分
+      - title: 金融分野のユースケース
+        duration: 約5分
+      - title: エンターテイメント・マーケティング応用
+        duration: 約7分
+      - title: 未来展望と企業の取り組み方
+        duration: 約7分
+    milestones:
+      - content: レクチャー1-10の動画ダウンロード完了
+        status: 完了
+      - content: Udemy審査提出済 (5/9)
+        status: 完了
+      - content: 字幕設定の必要性について確認
+        status: 完了
+      - content: レクチャー1の動画作成検討
+        status: 完了
+      - content: レクチャー5までの未設定項目の確認と設定
+        status: 完了
+      - content: ウィークシックス以降のトークスクリプト作成
+        status: 未着手
+      - content: 中期事業計画の策定
+        status: 未着手
+    google_workspace_links:
+      # プロジェクトに関連するGoogleワークスペースドキュメントへのリンクをここに記載
+      # 例:
+      # - title: 動画講座スクリプト
+      #   url: [GoogleドキュメントのURL]
+      # - title: 編集指示書
+      #   url: [GoogleドキュメントのURL]
+
+  - name: 資本提携・投資案件
+    sub_projects:
+      - name: ビプロジー様 資本提携案件
+        purpose: |
+          戦略的な資本提携を通じて、N.Avenueの事業拡大とサービス強化を実現する。特にWeb3技術活用領域での協業を推進し、相互のビジネス成長を加速させる。
+        background:
+          - ビプロジー社のWeb3関連技術と、N.Avenueの専門知識・コミュニティを組み合わせたシナジー創出が期待できる
+          - 両社の強みを活かした新たなサービス開発・市場開拓の可能性
+          - 資本関係構築による長期的パートナーシップの確立
+        milestones:
+          - date: 2025-04-25
+            content: 初期検討開始
+            status: 完了
+          - date: 2025-04-28
+            content: 資本提携案件内部検討・対応
+            status: 保留
+          - date: 2025-05月上旬
+            content: 条件交渉・スキーム詳細検討
+            status: 予定
+          - date: 2025-05月中旬
+            content: デューデリジェンス実施
+            status: 計画段階
+      - name: 日鉄ソリューションズ様 連携案件
+        purpose: 日鉄ソリューションズ様との連携を強化し、新たな事業機会を創出する。
+        status: 検討中 (最も角度が高い)
+      - name: 三井住友フィナンシャルグループ様 出資案件
+        purpose: 三井住友フィナンシャルグループ様からの出資を受け入れ、事業基盤を強化する。
+        milestones:
+          - content: 出資決定
+            status: 完了
+            date: 2025-05-12
+    google_workspace_links:
+      # プロジェクトに関連するGoogleワークスペースドキュメントへのリンクをここに記載
+      # 例:
+      # - title: 資本提携検討資料
+      #   url: [GoogleドキュメントのURL]
+
+  - name: Solanaエンタープライズ向けアクセラレーションプログラム
+    purpose: |
+      大手企業向けのWeb3アクセラレーションプログラムを提供し、既存事業との相乗効果を創出しながら新たな収益源を確立する。企業のWeb3活用を包括的に支援するワンストップソリューションの構築を目指す。
+    background:
+      - 大手企業においてもWeb3技術活用ニーズが高まっているが、専門知識・実装経験が不足
+      - 既存のClub会員からも、より実践的・伴走型の支援を求める声が増加
+      - superteamなど外部パートナーとの連携による包括的支援体制の構築が可能
+    program_structure_draft:
+      - phase: 診断フェーズ
+        description: 現状分析・課題抽出
+        duration: 2週間
+      - phase: 戦略策定フェーズ
+        description: Web3活用シナリオ設計
+        duration: 4週間
+      - phase: PoC実施フェーズ
+        description: 小規模実証実験
+        duration: 8週間
+      - phase: 実装支援フェーズ
+        description: 本格展開・運用定着
+        duration: 12週間
+    milestones:
+      - date: 2025-04-25
+        content: アクセラプログラム素案策定
+        status: 完了
+      - date: 2025-04-30
+        content: 茂さん/superteamへスライド連携
+        status: 完了
+      - date: 2025-05-15
+        content: solanaアクセラの資料送付
+        status: 完了
+      - date: 2025-05月中旬
+        content: プログラム詳細設計・料金体系確定
+        status: 進行中
+        備考: 提案ブラッシュアップ版スライドレビュー完了、完成度高い
+      - date: 2025-06月
+        content: 先行企業へのプログラム提案開始
+        status: 計画段階
+    google_workspace_links:
+      # プロジェクトに関連するGoogleワークスペースドキュメントへのリンクをここに記載
+      # 例:
+      # - title: プログラム提案資料
+      #   url: [GoogleスライドのURL]
+
+  - name: Web3・ブロックチェーン研修プログラム
+    purpose: |
+      企業や個人向けにWeb3・ブロックチェーンに関する研修プログラムを提供し、知識習得と実務への応用を支援する。
+    background:
+      - 企業からのWeb3研修ニーズの高まり
+      - N.Avenueの専門知識を活用した実践的なプログラム提供
+    milestones:
+      tasks:
+        - content: CAC研修 Week5 アンケート回答の収集
+          status: 未着手
+        - content: CAC研修 Week5 アンケート回答を資料に反映
+          status: 未着手
+        - content: 薮下様の感想コメントをいただく
+          status: 完了
+          備考: 来週進捗確認
+    google_workspace_links:
+      # プロジェクトに関連するGoogleワークスペースドキュメントへのリンクをここに記載
+      # 例:
+      # - title: 研修資料
+      #   url: [GoogleドキュメントのURL]

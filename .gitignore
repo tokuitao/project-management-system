@@ -1,5 +1,6 @@
 # Docker volumes
 dify/docker/volumes/
+dify/
 
 # System files
 .DS_Store
@@ -15,10 +16,15 @@ dify/docker/volumes/
 .idea/
 .vscode/
 
+# Dependencies
+node_modules/
+
 # Temporary files
 tmp/
 temp/
 *.tmp
+*.swp
+*.bak
 
 # OS generated files
 Thumbs.db
