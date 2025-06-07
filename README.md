@@ -1,45 +1,77 @@
-# Project Management System
+# AI駆動プロジェクト管理システム + ナレッジグラフ
 
-AI-powered project management system with dual AI integration (Roo Code + Claude Code)
+AI-powered project management system with knowledge graph visualization
 
-## Features
+## 主な機能
 
-- 📋 **Project Management**: Comprehensive project tracking with YAML structure
-- 📅 **Task Management**: Daily task organization and prioritization  
-- 🤖 **AI Integration**: Dual AI system for different complexity levels
-- 📊 **Progress Tracking**: Status monitoring and milestone management
-- 💬 **Slack Integration**: Automated daily summaries
+- 📋 **プロジェクト管理**: YAMLベースの体系的なプロジェクト管理
+- 📅 **タスク管理**: AIによる日次タスクの整理と優先度設定
+- 🧠 **ナレッジグラフ**: Obsidian風の知識管理・可視化（新機能）
+- 🤖 **マルチAI統合**: Claude Code + Roo Code + Gemini連携
+- 📊 **進捗追跡**: リアルタイムステータス監視
+- 💬 **Slack連携**: 自動日次サマリー
 
-## Structure
+## ディレクトリ構成
 
 ```
-project-management-system/
+task-manager/
 ├── data/
-│   ├── projects/           # Project definitions (YAML)
-│   └── tasks/             # Task lists (Markdown)
-├── docs/                  # Documentation and guides
-├── scripts/               # Automation scripts
-└── config/               # Configuration files
+│   ├── projects/          # プロジェクト定義 (YAML)
+│   └── tasks/            # タスクリスト (Markdown)
+├── docs/                 # ドキュメント・ガイド
+│   └── PROJECT-FLOW.md   # プロジェクト全体のフロー
+├── scripts/              # 自動化スクリプト
+├── knowledge/            # ナレッジベース（新規）
+│   ├── topics/           # トピック別ノート
+│   ├── references/       # 参考資料・クリップ
+│   └── daily/            # デイリーノート
+└── CLAUDE.md             # Claude設定
+
 ```
 
-## AI Usage
+## AI活用方法
 
-### Daily Tasks (Cost-effective)
-- **Tool**: Roo Code + Gemini API
-- **Trigger**: "タスク整理を開始"
-- **Output**: Slack-ready format
+### 日常タスク（コスト効率）
+- **ツール**: Roo Code + Gemini API
+- **トリガー**: "タスク整理を開始"
+- **出力**: Slack対応フォーマット
 
-### Strategic Analysis (High-quality)
-- **Tool**: Claude Code
-- **Trigger**: "@claude [specific request]"
-- **Use Cases**: Complex analysis, strategic planning
+### 戦略的分析・開発（高品質）
+- **ツール**: Claude Code
+- **トリガー**: "@claude [具体的な要求]"
+- **用途**: 複雑な分析、戦略立案、実装
 
-## Quick Start
+### 進捗確認（外出先対応）
+- **ツール**: Gemini + GitHub連携
+- **方法**: GitHubリポジトリをインポート
+- **用途**: プロジェクト状況の把握
 
-1. Clone this repository
-2. Set up AI integration (see docs/AI-USAGE-GUIDE.md)
-3. Start managing projects and tasks
-4. Use AI assistants for daily automation
+## ナレッジグラフ機能（新規）
+
+### 概要
+- `[[ページ名]]`形式でページ間をリンク
+- `#タグ`でコンテンツを分類
+- グラフビューで知識の関連性を可視化
+- Claude Codeが自動でタグ・リンクを提案
+
+### 使い方
+```bash
+# 進捗同期
+sync-progress
+
+# グラフビュー表示（実装予定）
+npm run graph-view
+
+# ナレッジインデックス更新（実装予定）
+npm run build-knowledge
+```
+
+## クイックスタート
+
+1. リポジトリをクローン
+2. AI統合の設定（docs/AI-USAGE-GUIDE.md参照）
+3. sync-progressエイリアスの設定
+4. プロジェクトとタスクの管理開始
 
 ## License
 
